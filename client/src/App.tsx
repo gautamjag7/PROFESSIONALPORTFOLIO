@@ -16,7 +16,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <div className="min-h-screen bg-background text-foreground">
         <Navigation />
-        <main>
+        <main className="space-y-1">
           <Hero />
           <Projects />
           <Experience />
