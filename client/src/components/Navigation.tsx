@@ -10,16 +10,33 @@ const navItems = [
   { label: "Skills", href: "#skills" },
   { label: "Blog", href: "#blog" },
   { label: "Education", href: "#education" },
+  { label: "Achievements", href: "#achievements" },
   { label: "Contact", href: "#contact" }
 ];
 
-export function Navigation() {
+interface NavigationProps {
+  setActiveSection: (section: string) => void;
+}
+
+export function Navigation({ setActiveSection }: NavigationProps) {
   const [open, setOpen] = useState(false);
+
+  const handleNavClick = (href: string) => {
+    const section = href.slice(1);
+    setActiveSection(section);
+    setOpen(false);
+  };
 
   return (
     <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-sm z-50 border-b">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-        <a href="#" className="text-xl font-bold text-primary">Portfolio</a>
+        <a 
+          href="#about" 
+          className="text-xl font-bold text-primary"
+          onClick={() => handleNavClick("#about")}
+        >
+          Jagmohan
+        </a>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-6">
@@ -27,6 +44,10 @@ export function Navigation() {
             <a
               key={item.href}
               href={item.href}
+              onClick={(e) => {
+                e.preventDefault();
+                handleNavClick(item.href);
+              }}
               className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
             >
               {item.label}
@@ -47,8 +68,11 @@ export function Navigation() {
                 <a
                   key={item.href}
                   href={item.href}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNavClick(item.href);
+                  }}
                   className="text-lg font-medium text-muted-foreground hover:text-primary transition-colors"
-                  onClick={() => setOpen(false)}
                 >
                   {item.label}
                 </a>

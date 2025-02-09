@@ -10,21 +10,37 @@ import { Blog } from "./components/sections/Blog";
 import { ThemeToggle } from "./components/ThemeToggle";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { queryClient } from "./lib/queryClient";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [activeSection, setActiveSection] = useState("about");
+
+  // Listen for hash changes
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash.slice(1) || "about";
+      setActiveSection(hash);
+    };
+
+    window.addEventListener("hashchange", handleHashChange);
+    handleHashChange(); // Set initial section
+
+    return () => window.removeEventListener("hashchange", handleHashChange);
+  }, []);
+
   return (
     <QueryClientProvider client={queryClient}>
       <div className="min-h-screen bg-background text-foreground">
-        <Navigation />
-        <main className="space-y-1">
-          <Hero />
-          <Projects />
-          <Experience />
-          <Skills />
-          <Blog />
-          <Education />
-          <Achievements />
-          <Contact />
+        <Navigation setActiveSection={setActiveSection} />
+        <main>
+          {activeSection === "about" && <Hero />}
+          {activeSection === "projects" && <Projects />}
+          {activeSection === "experience" && <Experience />}
+          {activeSection === "skills" && <Skills />}
+          {activeSection === "blog" && <Blog />}
+          {activeSection === "education" && <Education />}
+          {activeSection === "achievements" && <Achievements />}
+          {activeSection === "contact" && <Contact />}
         </main>
         <ThemeToggle />
       </div>
