@@ -1,0 +1,53 @@
+Problem Setter Intern
+ Nov 2024- Jan 2025
+ • Created and tested coding problems focusing on Data Structures and Algorithms, ensuring quality and inclusion
+ of corner cases.
+ • Explored and implemented both brute force and optimal solutions for various coding challenges.
+ • Enhanced existing problem sets by maintaining quality and expanding test cases.
+ • Building coding courses and lessons to help Kalvium’s learners learn concepts in Data Structures and Algorithm.
+ Projects
+ Apple and Corn Disease Detection and Diagnosis
+ Sep 2024- Nov 2024
+ • Developed a deep learning model using CNNs to detect and diagnose diseases in apples and corn, leveraging
+ AlexNet and achieving 80% accuracy.
+ • Incorporated a feature to display symptoms and provide recommended treatments for each detected disease.
+ • Utilized image processing techniques and deep learning frameworks to preprocess data and train the model
+ effectively.
+ • Delivered a solution aimed at aiding farmers and agriculturalists in disease management and prevention.
+ Rock-Paper-Scissors Game
+ Aug 2024
+ • Developed an interactive and visually appealing Rock-Paper-Scissors game with hand gestures, allowing users
+ to play against the computer, leading to a 50% increase in user engagement.
+ • Implemented features such as a reset score functionality and an autoplay button, which enhanced the user
+ experience and extended average session duration by 30%.
+ • Built using HTML, CSS, and JavaScript to create a responsive and user-friendly interface.
+ YouTube UI
+ • Designed a front-end clone of YouTube using only HTML and CSS.
+ • Implemented responsive design to ensure the site works well on various devices.
+ May 2024
+ • Focused on replicating the layout and user interface components, achieving a 91% accuracy in visual similarity.
+ Job Role Suggestion
+ Jan 2024- May 2024
+ • An Object Oriented Analysis & Design project featuring UML diagrams, design patterns, use case analysis,
+ and an SRS document.
+ • Delivers personalized career recommendations based on academic performance, interests, and aspirations.
+ • used HTML and CSS for the UI, Python for integrating with the backend, SQL for database management, and
+ trained the machine learning model using the Random Forest algorithm with 84% accuracy.
+ Skills
+ Technical Skills: C++ C Data Structures & Algorithms Object oriented programming (Oops)
+ Python Java MySQL HTML&CSS JavaScript SDLC DBMS STL Multi
+threading Process Operating System
+ Tools:
+ Git & GitHub Visual Studio
+ Education
+ 2021- present B.Tech in CSE, SRM University, Andhra Pradesh (CGPA: 8.02)
+ 2021
+ Class XII- CBSE (96.40%)
+ 2019
+ Class X- CBSE (95.20%)
+ Achievements & Participations
+ • Received a 100% scholarship for my undergraduate degree, covering both academic fees and accommodation.
+ • Competed in college-organized Code-Clash contests, achieving a top 10 team ranking.
+ • Contributed to the Coding Club of my college, providing technical support and helping to frame questions.
+ • Solved over 500 plus problems on LeetCode and participated in 44 contests on CodeChef to enhance my
+ problem-solving skills
