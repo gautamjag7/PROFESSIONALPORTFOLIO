@@ -8,10 +8,10 @@ const navItems = [
   { label: "Projects", href: "#projects" },
   { label: "Experience", href: "#experience" },
   { label: "Skills", href: "#skills" },
-  { label: "Blog", href: "#blog" },
   { label: "Education", href: "#education" },
   { label: "Achievements", href: "#achievements" },
-  { label: "Contact", href: "#contact" }
+  { label: "Contact", href: "#contact" },
+  { label: "Blog", href: "#blog" }
 ];
 
 interface NavigationProps {

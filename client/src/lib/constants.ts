@@ -11,7 +11,7 @@ export const PROJECTS = [
     ]
   },
   {
-    title: "Rock-Paper-Scissors Game",
+    title: "Rock Paper Scissors Game",
     description: "Interactive game with hand gestures allowing users to play against computer",
     image: "https://images.unsplash.com/photo-1508873535684-277a3cbcc4e8",
     period: "Aug 2024",
@@ -19,18 +19,20 @@ export const PROJECTS = [
       "50% increase in user engagement",
       "Reset score functionality and autoplay button",
       "Built using HTML, CSS, and JavaScript"
-    ]
+    ],
+    link: "https://game01-rps.netlify.app/"
   },
   {
-    title: "YouTube UI Clone",
-    description: "Front-end clone of YouTube using HTML and CSS",
+    title: "YouTube UI",
+    description: "Front-end implementation of YouTube using HTML and CSS",
     image: "https://images.unsplash.com/photo-1660592868727-858d28c3ba52",
     period: "May 2024",
     points: [
       "91% accuracy in visual similarity",
       "Responsive design for various devices",
       "Pure HTML/CSS implementation"
-    ]
+    ],
+    link: "https://u-tube-ui.netlify.app/"
   },
   {
     title: "Job Role Suggestion System",
@@ -53,7 +55,12 @@ export const SKILLS = [
   { name: "HTML & CSS", level: 85 },
   { name: "Java", level: 75 },
   { name: "MySQL", level: 80 },
-  { name: "Object Oriented Programming", level: 90 }
+  { name: "Object Oriented Programming", level: 90 },
+  { name: "SDLC", level: 85 },
+  { name: "DBMS", level: 85 },
+  { name: "Machine Learning", level: 80 },
+  { name: "Operating System", level: 85 },
+  { name: "Blockchain", level: 75 }
 ];
 
 export const EDUCATION = [
@@ -61,7 +68,7 @@ export const EDUCATION = [
     degree: "B.Tech in CSE",
     institution: "SRM University, Andhra Pradesh",
     period: "2021 - present",
-    score: "CGPA: 8.02"
+    score: "CGPA: 8.04"
   },
   {
     degree: "Class XII - CBSE",
@@ -81,8 +88,8 @@ export const ACHIEVEMENTS = [
   "100% scholarship for undergraduate degree covering academic fees and accommodation",
   "Top 10 team ranking in college Code-Clash contests",
   "Active contributor to college Coding Club",
-  "500+ problems solved on LeetCode",
-  "Participated in 44 CodeChef contests"
+  "Solved 550+ problems on LeetCode",
+  "Participated in 45+ CodeChef contests"
 ];
 
 export const BLOG_POSTS = [

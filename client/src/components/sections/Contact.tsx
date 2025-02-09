@@ -16,23 +16,31 @@ export function Contact() {
           </CardHeader>
           <CardContent className="grid gap-6">
             <div className="flex flex-col md:flex-row gap-4 justify-center">
-              <Button variant="secondary" className="flex-1">
-                <Mail className="mr-2 h-4 w-4" />
-                Email Me
+              <Button asChild variant="secondary" className="flex-1">
+                <a href="mailto:jagmohangautam7@gmail.com">
+                  <Mail className="mr-2 h-4 w-4" />
+                  Email Me
+                </a>
               </Button>
-              <Button variant="secondary" className="flex-1">
-                <MessageSquare className="mr-2 h-4 w-4" />
-                Message
+              <Button asChild variant="secondary" className="flex-1">
+                <a href="https://www.linkedin.com/in/jagmohan-gautam-2b5b64249/" target="_blank" rel="noopener noreferrer">
+                  <MessageSquare className="mr-2 h-4 w-4" />
+                  Message
+                </a>
               </Button>
             </div>
             <div className="flex flex-col md:flex-row gap-4 justify-center">
-              <Button variant="secondary" className="flex-1">
-                <Github className="mr-2 h-4 w-4" />
-                GitHub Profile
+              <Button asChild variant="secondary" className="flex-1">
+                <a href="https://github.com/gautamjag7" target="_blank" rel="noopener noreferrer">
+                  <Github className="mr-2 h-4 w-4" />
+                  GitHub Profile
+                </a>
               </Button>
-              <Button variant="secondary" className="flex-1">
-                <Linkedin className="mr-2 h-4 w-4" />
-                LinkedIn Profile
+              <Button asChild variant="secondary" className="flex-1">
+                <a href="https://www.linkedin.com/in/jagmohan-gautam-2b5b64249/" target="_blank" rel="noopener noreferrer">
+                  <Linkedin className="mr-2 h-4 w-4" />
+                  LinkedIn Profile
+                </a>
               </Button>
             </div>
           </CardContent>

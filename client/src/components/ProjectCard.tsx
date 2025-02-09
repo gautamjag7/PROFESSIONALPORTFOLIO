@@ -1,5 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { motion } from "framer-motion";
+import { Link2 } from "lucide-react";
+import { Button } from "./ui/button";
 
 interface ProjectCardProps {
   title: string;
@@ -7,9 +9,10 @@ interface ProjectCardProps {
   image: string;
   period: string;
   points: string[];
+  link?: string;
 }
 
-export function ProjectCard({ title, description, image, period, points }: ProjectCardProps) {
+export function ProjectCard({ title, description, image, period, points, link }: ProjectCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -27,7 +30,16 @@ export function ProjectCard({ title, description, image, period, points }: Proje
         </div>
         <CardHeader>
           <div className="flex justify-between items-start">
-            <CardTitle className="text-xl">{title}</CardTitle>
+            <div className="flex items-center gap-2">
+              <CardTitle className="text-xl">{title}</CardTitle>
+              {link && (
+                <Button asChild variant="ghost" size="icon" className="h-8 w-8">
+                  <a href={link} target="_blank" rel="noopener noreferrer">
+                    <Link2 className="h-4 w-4" />
+                  </a>
+                </Button>
+              )}
+            </div>
             <span className="text-sm text-muted-foreground">{period}</span>
           </div>
           <CardDescription>{description}</CardDescription>
