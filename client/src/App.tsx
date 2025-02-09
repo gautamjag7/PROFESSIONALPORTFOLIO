@@ -30,13 +30,8 @@ function App() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <div className="min-h-screen bg-background text-foreground flex"> {/* Added flex to allow horizontal arrangement */}
-        <div> {/* Container for Navigation */}
-          <Navigation setActiveSection={setActiveSection} />
-        </div>
-        <div className="ml-auto"> {/* Move ThemeToggle to the right */}
-          <ThemeToggle />
-        </div>
+      <div className="min-h-screen bg-background text-foreground relative">
+        <Navigation setActiveSection={setActiveSection} />
         <main>
           {activeSection === "about" && <Hero />}
           {activeSection === "projects" && <Projects />}
@@ -47,6 +42,9 @@ function App() {
           {activeSection === "achievements" && <Achievements />}
           {activeSection === "contact" && <Contact />}
         </main>
+        <div className="fixed bottom-4 right-4">
+          <ThemeToggle />
+        </div>
       </div>
     </QueryClientProvider>
   );
