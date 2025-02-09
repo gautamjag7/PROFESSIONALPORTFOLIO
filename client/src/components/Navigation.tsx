@@ -8,6 +8,7 @@ const navItems = [
   { label: "Projects", href: "#projects" },
   { label: "Experience", href: "#experience" },
   { label: "Skills", href: "#skills" },
+  { label: "Blog", href: "#blog" },
   { label: "Education", href: "#education" },
   { label: "Contact", href: "#contact" }
 ];
@@ -19,7 +20,7 @@ export function Navigation() {
     <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-sm z-50 border-b">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <a href="#" className="text-xl font-bold text-primary">Portfolio</a>
-        
+
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-6">
           {navItems.map((item) => (

@@ -84,3 +84,33 @@ export const ACHIEVEMENTS = [
   "500+ problems solved on LeetCode",
   "Participated in 44 CodeChef contests"
 ];
+
+export const BLOG_POSTS = [
+  {
+    title: "Understanding Data Structures in Modern Web Development",
+    description: "An in-depth look at how data structures power modern web applications and their practical implementations.",
+    date: "2025-02-01",
+    readTime: "8 min read",
+    category: "Web Development",
+    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+    preview: "Data structures are fundamental to writing efficient and scalable web applications. In this article, we'll explore how common data structures are used in frontend development..."
+  },
+  {
+    title: "Machine Learning in Agriculture: A Case Study",
+    description: "Exploring the implementation of CNNs for crop disease detection and its real-world impact.",
+    date: "2025-01-15",
+    readTime: "10 min read",
+    category: "Machine Learning",
+    image: "https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8",
+    preview: "Learn how we implemented a Convolutional Neural Network (CNN) to detect diseases in crops, improving agricultural yield and efficiency..."
+  },
+  {
+    title: "Optimizing React Applications for Performance",
+    description: "Best practices and techniques for building high-performance React applications.",
+    date: "2024-12-28",
+    readTime: "12 min read",
+    category: "React",
+    image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee",
+    preview: "Discover advanced techniques for optimizing React applications, including code splitting, memoization, and efficient state management..."
+  }
+];

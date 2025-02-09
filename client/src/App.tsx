@@ -6,6 +6,7 @@ import { Education } from "./components/sections/Education";
 import { Experience } from "./components/sections/Experience";
 import { Achievements } from "./components/sections/Achievements";
 import { Contact } from "./components/sections/Contact";
+import { Blog } from "./components/sections/Blog";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { queryClient } from "./lib/queryClient";
 
@@ -19,6 +20,7 @@ function App() {
           <Projects />
           <Experience />
           <Skills />
+          <Blog />
           <Education />
           <Achievements />
           <Contact />
